@@ -104,7 +104,7 @@ body {
 
 .bihada-img {
     position: absolute;
-    left: 480px;
+    left: 20vw;
     width: 500px;
 }
 
@@ -126,7 +126,7 @@ body {
 
 .ryouri-detail {
     position: absolute;
-    left: 480px;
+    left: 20vw;
 }
 /* price */
 
@@ -164,7 +164,7 @@ body {
 }
 
 .price-content {
-    padding-left: 96px;
+    padding-left: 8.5vw;
     padding-top: 32px;
 }
 
