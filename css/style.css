@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+body {
+    font-family: vdl-penlady, sans-serif;
+}
+
+/* section */
+
+.section-wrap {
+    padding: 96px 0;
+}
+
+.section-inner {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.section-ttl {
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 1px solid #000;
+    padding-left: 32px;
+}
+
+.section-text {
+    padding-right: 32px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.15em;
+}
+
+/* button */
+
+.button {
+    position: fixed;
+    z-index: 200;
+    top: 60vh;
+    left: 10vw;
+    background-color: #210d34;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.button p {
+    padding: 16px;
+}
+
+/* mv */
+
+.mv::after {
+    content: "ご予約・お問い合わせ\a××-××××-××××";
+    white-space: pre;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    background-color: #210d34;
+    color: #fff;
+    font-size: 18px;
+}
+
+.mv-img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.mv-ttl {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 60px;
+}
+
+.mv-ttl span {
+    text-align: left;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    display: inline-block;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+/* bihada */
+
+.bihada {
+    background-image: url(../img/bg.jpg);
+    position: relative;
+}
+
+.bihada-img {
+    position: absolute;
+    left: 480px;
+    width: 500px;
+}
+
+/* ryouri */
+
+.ryouri {
+    background-color: #333;
+    color: #fff;
+    position: relative;
+}
+
+.ryouri-img {
+    width: 600px;
+}
+
+.ryouri-ttl {
+    border-left: 1px solid #fff;
+}
+
+.ryouri-detail {
+    position: absolute;
+    left: 480px;
+}
+/* price */
+
+.price {
+    background-image: url(../img/bg.jpg);
+}
+
+.diamond {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.diamond::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #210d34;
+    transform: rotate(-45deg) skew(20deg, 20deg);
+    z-index: 1;
+}
+
+.diamond-ttl {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.price-content {
+    padding-left: 96px;
+    padding-top: 32px;
+}
+
+/* yoyaku */
+
+.yoyaku {
+    padding: 160px auto;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+        url(../img/yoyaku.jpg);
+    background-size: 100%;
+    background-position-y: 40%;
+    color: #fff;
+}
+
+.yoyaku-ttl {
+    font-size: 18px;
+}
+
+.yoyaku-number {
+    font-size: 28px;
+}
+
+.yoyaku-text {
+    font-size: 14px;
+    padding-top: 32px;
+}
+
+/* map */
+
+.map {
+    position: relative;
+}
+
+.map-text {
+    padding: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* footer */
+
+.footer {
+    background-color: #210d34;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            (function (d) {
+                var config = {
+                        kitId: "vat6eae",
+                        scriptTimeout: 3000,
+                        async: true,
+                    },
+                    h = d.documentElement,
+                    t = setTimeout(function () {
+                        h.className =
+                            h.className.replace(/\bwf-loading\b/g, "") +
+                            " wf-inactive";
+                    }, config.scriptTimeout),
+                    tk = d.createElement("script"),
+                    f = false,
+                    s = d.getElementsByTagName("script")[0],
+                    a;
+                h.className += " wf-loading";
+                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+                tk.async = true;
+                tk.onload = tk.onreadystatechange = function () {
+                    a = this.readyState;
+                    if (f || (a && a != "complete" && a != "loaded")) return;
+                    f = true;
+                    clearTimeout(t);
+                    try {
+                        Typekit.load(config);
+                    } catch (e) {}
+                };
+                s.parentNode.insertBefore(tk, s);
+            })(document);
+        </script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="button">
+            <a href="#yoyaku" onclick="linkClick(this);"><p>↓美肌の湯</p></a>
+        </div>
+        <mv class="mv">
+            <img class="mv-img" src="img/mv-bg.jpg" alt="" />
+            <h1 class="mv-ttl">
+                <span>紫沢温泉</span>
+            </h1>
+        </mv>
+        <section id="bihada" class="section-wrap bihada">
+            <div class="section-inner">
+                <h2 class="section-ttl">歴史ある美肌の湯</h2>
+                <p class="section-text">
+                    紫沢温泉の美肌の湯は、美容液のような肌触りが特徴です。古い角<br />
+                    質をやわらかくし、汚れを落としやすくする効果があります。<br />
+                    さらに、お肌に潤いを与えて美肌へのサポートをいたします。
+                </p>
+                <img src="img/bihada.jpg" alt="" class="bihada-img" />
+            </div>
+        </section>
+        <section id="ryouri" class="section-wrap ryouri">
+            <div class="section-inner">
+                <img src="img/ryouri.jpg" alt="" class="ryouri-img" />
+                <div class="ryouri-detail">
+                    <h2 class="section-ttl ryouri-ttl">
+                        地元の食材を使った日本料理
+                    </h2>
+                    <p class="section-text">
+                        地元の食材を使った日本料理をご用意しております。<br />
+                        新鮮で美味しい料理を心ゆくまでご堪能ください。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="price" class="section-wrap price">
+            <div class="diamond">
+                <h2 class="diamond-ttl">料金</h2>
+            </div>
+            <div class="section-inner">
+                <div class="price-content">
+                    <h2 class="section-ttl">入湯料</h2>
+                    <p class="section-text">
+                        大人　千円<br />
+                        子供　七百円
+                    </p>
+                </div>
+                <div class="price-content">
+                    <h2 class="section-ttl">宿泊料</h2>
+                    <p class="section-text">
+                        二人部屋　二万円<br />
+                        四人部屋　三万五千円
+                    </p>
+                </div>
+                <div class="price-content">
+                    <h2 class="section-ttl">お食事</h2>
+                    <p class="section-text">
+                        一食　千二百円<br />
+                        ※就学前のお子様は無料
+                    </p>
+                </div>
+                <div class="price-content">
+                    <h2 class="section-ttl">アメニティーセット</h2>
+                    <p class="section-text">
+                        大人　千円<br />
+                        子供　五百円<br />
+                        ※タオル、歯ブラシ、ヘアブラシ、浴衣付
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="yoyaku" class="section-wrap yoyaku">
+            <h2 class="yoyaku-ttl">ご予約・お問い合わせ</h2>
+            <p class="yoyaku-number">××-××××-××××</p>
+            <p class="yoyaku-text">
+                入浴時間<br />
+                朝10時〜夜22時<br /><br />
+                皆様のお越しを心よりお待ちしております。
+            </p>
+        </section>
+        <section class="map-wrap">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12403.030999330147!2d141.09054519258777!3d38.99802484914318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f88cde290cae289%3A0xac832a6cf0cadcb0!2z44CSMDI5LTQxMDIg5bKp5omL55yM6KW_56OQ5LqV6YOh5bmz5rOJ55S65bmz5rOJ6KGj6Zai!5e0!3m2!1sja!2sjp!4v1641886169512!5m2!1sja!2sjp"
+                    width="100%"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+                <p class="map-text">
+                    紫沢温泉<br />
+                    〒029-4102<br />
+                    岩手県西磐井郡平泉町平泉衣関<br />
+                    入浴時間　朝10時〜夜22時
+                </p>
+            </div>
+        </section>
+        <footer class="footer">
+            <small>&copy;sizawaonsen</small>
+        </footer>
+        <!-- jQueryの読み込み（CDN） -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- main.jsの読み込み -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
