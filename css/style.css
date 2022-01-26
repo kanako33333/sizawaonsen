@@ -215,3 +215,106 @@ body {
     text-align: center;
     padding: 8px;
 }
+
+/* レスポンシブ */
+@media screen and (max-width: 1000px) {
+    /* section */
+    .section-inner{
+        width: 600px;
+    }
+    .section-ttl{
+        padding-left: 16px;
+    }
+    /* bihada */
+    .section-text{
+        padding-right: 16px;
+    }
+    .bihada-img{
+        left: 10vw;
+        width: 300px;
+    }
+    /* ryouri */
+    .ryouri{
+        height: 580px;
+    }
+    .ryouri-img{
+        width: 300px;
+    }
+    .ryouri-detail{
+        left: 10vw;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    /* section */
+    .section-wrap{
+        padding: 64px 0;
+    }
+    .section-inner{
+        -ms-writing-mode: lr-tb;
+        writing-mode: lr-tb;
+    }
+    .section-inner{
+        width: 100%;
+    }
+    .section-ttl{
+        padding-left: 16px;
+        margin-bottom: 16px;
+    }
+    .section-text{
+        padding: 0;
+    }
+    /* button */
+    .button{
+        display: none;
+    }
+    /* mv */
+    .mv::after{
+        font-size: 12px;
+        padding: 8px;
+    }
+    /* bihada */
+    .bihada-inner{
+        display: flex;
+        flex-flow: column;
+    }
+    .bihada-img{
+        position: static;
+        width: 100%;
+        left: 0;
+        order: 1;
+        padding-bottom: 32px;
+    }
+    .bihada-detail{
+        padding: 0 16px;
+        order: 2;
+    }
+    .bihada-detail br{
+        display: none;
+    }
+    /* ryouri */
+    .ryouri-img{
+        width: 100%;
+        padding-bottom: 32px;
+    }
+    .ryouri-detail{
+        position: static;
+        padding: 0 16px;
+    }
+    .ryouri-detail br{
+        display: none;
+    }
+    /* yoyaku */
+    .yoyaku{
+        background-size: cover;
+    }
+    .diamond{
+        width: 100px;
+        height: 100px;
+    }
+    .diamond::before{
+        width: 100px;
+        height: 100px;
+    }
+}
